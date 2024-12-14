@@ -1,0 +1,25 @@
+=============== Dec 14, 2024 (UTC) ===============
+00:29:39.906239 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:29:39.910855 db@open opening
+00:29:39.912177 version@stat F·[] S·0B[] Sc·[]
+00:29:39.913873 db@janitor F·2 G·0
+00:29:39.913954 db@open done T·3.028573ms
+=============== Dec 14, 2024 (UTC) ===============
+01:06:40.096804 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:06:40.098829 version@stat F·[] S·0B[] Sc·[]
+01:06:40.099016 db@open opening
+01:06:40.099881 journal@recovery F·1
+01:06:40.100021 journal@recovery recovering @1
+01:06:40.102673 memdb@flush created L0@2 N·20 S·449B "iss..igh,v8":"web..low,v13"
+01:06:40.103213 version@stat F·[1] S·449B[449B] Sc·[0.25]
+01:06:40.110352 db@janitor F·3 G·0
+01:06:40.110430 db@open done T·10.997573ms
+=============== Dec 14, 2024 (UTC) ===============
+01:08:19.752409 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:08:19.754596 version@stat F·[1] S·449B[449B] Sc·[0.25]
+01:08:19.754790 db@open opening
+01:08:19.755488 journal@recovery F·1
+01:08:19.755647 journal@recovery recovering @3
+01:08:19.756754 version@stat F·[1] S·449B[449B] Sc·[0.25]
+01:08:19.764206 db@janitor F·3 G·0
+01:08:19.764299 db@open done T·9.428585ms
