@@ -68,6 +68,6 @@ services:
     build:
       context: .  # Путь к текущей директории, где находится Dockerfile
       dockerfile: Dockerfile  # Указание на Dockerfile
-    command: pytest  # Запуск тестов в контейнере
+    command: pytest tests  # Запуск тестов в контейнере
     depends_on:
       - git  # Убедитесь, что ваше приложение (например, сервис с именем "app") уже запущено
