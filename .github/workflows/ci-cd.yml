@@ -52,8 +52,7 @@ jobs:
 
       - name: Run tests
         run: |
-          # Запуск тестов в контейнере, например, с использованием pytest или другого инструмента тестирования
-          docker-compose run --rm my_test_service  # Замените на имя вашего тестового контейнера
+          docker-compose run --rm test
 
   # Этап деплоя
   deploy:
