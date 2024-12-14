@@ -34,3 +34,18 @@ jobs:
         run: |
           docker-compose down
           docker-compose up -d
+      # Шаг: Настройка SSH
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Шаг: Деплой на сервер
+      - name: Deploy to server
+        run: |
+          ssh user@your-server-ip << 'EOF'
+            cd /path/to/your/project
+            docker-compose pull
+            docker-compose down
+            docker-compose up -d
+          EOF
