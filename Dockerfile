@@ -11,4 +11,4 @@ COPY . /app
 WORKDIR /app
 
 # Запуск тестов
-CMD ["pytest"]
+CMD ["pytest", "tests"]
