@@ -65,7 +65,9 @@ services:
       - WATCHTOWER_LABEL_ENABLE=true
 
   test:
-    image: your-test-image
-    command: pytest  
+    build:
+      context: .  # Путь к текущей директории, где находится Dockerfile
+      dockerfile: Dockerfile  # Указание на Dockerfile
+    command: pytest  # Запуск тестов в контейнере
     depends_on:
-      - git  
+      - git  # Убедитесь, что ваше приложение (например, сервис с именем "app") уже запущено
