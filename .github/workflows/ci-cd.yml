@@ -10,7 +10,7 @@ on:
 
 jobs:
   # Этап сборки
-  build-job:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,9 +34,9 @@ jobs:
           docker-compose ps
 
   # Этап тестирования
-  test-job:
+  test:
     runs-on: ubuntu-latest
-    needs: build-job  # Этот шаг выполняется только после успешного завершения build-job
+    needs: build
 
     steps:
       - name: Checkout code
@@ -56,9 +56,9 @@ jobs:
           docker-compose run --rm my_test_service  # Замените на имя вашего тестового контейнера
 
   # Этап деплоя
-  deploy-job:
+  deploy:
     runs-on: ubuntu-latest
-    needs: test-job  # Этот шаг выполняется только после успешного завершения test-job
+    needs: test
 
     steps:
       - name: Checkout code

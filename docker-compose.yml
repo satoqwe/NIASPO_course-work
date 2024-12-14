@@ -63,4 +63,9 @@ services:
     environment:
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_LABEL_ENABLE=true
-  
+
+  test:
+    image: your-test-image
+    command: pytest  
+    depends_on:
+      - app  
